@@ -1,0 +1,60 @@
+.wrap {
+  display: block;
+  width: 100%;
+  height: 5vw;
+  position: absolute;
+  top: 0;
+  background-color: #151719;
+}
+
+.itemlist {
+  font-size: 23px;
+  padding: 0 4% 0 5%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi-insta::before {
+  vertical-align: middle;
+  content: "";
+  background-image: url("https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.logodiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pagediv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.logoitem {
+  object-fit: contain;
+  max-width: 250px;
+}
+
+.pdivitem {
+  text-decoration: none;
+  color: #C5D2DC;
+  margin: 0 20px 0 20px;
+}
+
+.pdivitem:hover {
+  color: white;
+}

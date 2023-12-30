@@ -1,0 +1,13 @@
+.background {
+  background-color: #151719;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  color: white;
+  font-size: 5vw;
+}
