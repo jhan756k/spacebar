@@ -29,6 +29,9 @@ const Header = () => {
             <a href="/" className="pdivitem">
               About
             </a>
+            <a href="/" className="pdivitem">
+              Blog
+            </a>
           </div>
         </div>
       </div>
