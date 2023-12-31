@@ -1,0 +1,10 @@
+.teamdiv {
+  background: rgb(21, 23, 25);
+  position: absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 2000px;
+  width: 100%;
+  overflow: hidden;
+}

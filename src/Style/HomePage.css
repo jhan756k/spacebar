@@ -1,3 +1,9 @@
+:is(.title, .titleexp, .aboutbtn, .developbtn, .thumbnaildiv) {
+  visibility: hidden;
+  animation: fadeInUp 0.5s ease backwards;
+  animation-fill-mode: forwards;
+}
+
 .homediv {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -36,7 +42,6 @@
   align-items: center;
   margin-top: 70px;
   width: 100vw;
-  animation: fadeInUp 1s ease backwards;
 }
 
 .title {
@@ -44,12 +49,14 @@
   font-weight: bold;
   font-size: 60px;
   margin-bottom: 10px;
+  animation-delay: 0.1s;
 }
 
 .titleexp {
   color: #9ba9b4;
   font-size: 23px;
   text-align: center;
+  animation-delay: 0.2s;
 }
 
 .titlebtndiv {
@@ -73,6 +80,7 @@
   transition: 0.2s;
   width: 180px;
   height: 50px;
+  animation-delay: 0.3s;
 }
 
 .developbtn:hover {
@@ -92,6 +100,7 @@
   transition: 0.2s;
   width: 180px;
   height: 50px;
+  animation-delay: 0.4s;
 }
 
 .aboutbtn:hover {
@@ -104,6 +113,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation-delay: 0.5s;
 }
 
 .thumbnail {
@@ -142,11 +152,12 @@
 }
 
 @keyframes fadeInUp {
-  0% {
-    transform: translate(0px, 30px);
+  from {
+    transform: translate(0px, 20px);
     opacity: 0;
   }
-  100% {
+  to {
+    visibility: visible;
     transform: translate(0px, 0);
     opacity: 1;
   }

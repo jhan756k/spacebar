@@ -26,7 +26,7 @@ const Header = () => {
             <a href="/" className="pdivitem">
               Home
             </a>
-            <a href="/" className="pdivitem">
+            <a href="/team" className="pdivitem">
               Team
             </a>
             <a href="/" className="pdivitem">
