@@ -54,9 +54,7 @@ const Header = () => {
           }}
         >
           <div className="hamburgermenulist">
-            <div className="paneltitle">
-              Menu
-            </div>
+            <div className="paneltitle">Menu</div>
             <div className="hamburgermenuitem">
               <a href="/" className="hamburgermenuitem">
                 Home
@@ -77,6 +75,10 @@ const Header = () => {
                 Blog
               </a>
             </div>
+            <a href="/" className="instaham">
+              <i className="ham-insta" />
+              space_bar
+            </a>
           </div>
         </div>
       </div>
