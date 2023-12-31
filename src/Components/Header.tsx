@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../Style/Header.css";
 import { Squash as Hamburger } from "hamburger-react";
 
 const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  
+  useEffect(() => {
+    if (hamburgerOpen) {
+      window.scrollTo(0, 0);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }
+  , [hamburgerOpen]);
 
   return (
     <div>
