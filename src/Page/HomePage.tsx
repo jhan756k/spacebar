@@ -23,13 +23,13 @@ const HomePage = () => {
               </div>
               <div className="thumbnaildiv">
                 <img
-                  src="src/Assets/thumbnail.jpg"
+                  src="Assets/thumbnail.jpg"
                   alt=""
                   className="thumbnail"
                 />
                 <input
                   type="image"
-                  src="src/Assets/playbtn.png"
+                  src="Assets/playbtn.png"
                   alt=""
                   className="playbtn"
                   onClick={() => setModalOpen(true)}
@@ -52,7 +52,7 @@ const HomePage = () => {
           <div className="modal">
             <div className="modalBody">
               <video className="titlevid" controls autoPlay>
-                <source src="src/Assets/video.mp4" type="video/mp4" />
+                <source src="Assets/video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

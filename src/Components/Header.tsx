@@ -8,7 +8,7 @@ const Header = () => {
           <div className="logodiv">
             <a href="/" className="logoimg">
               <img
-                src="src\Assets\spacebar.png"
+                src="Assets\spacebar.png"
                 alt="monkey"
                 className="logoitem"
               />
