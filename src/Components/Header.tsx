@@ -71,7 +71,7 @@ const Header = () => {
               </a>
             </div>
             <div className="hamburgermenuitem">
-              <a href="/" className="hamburgermenuitem">
+              <a href="/team" className="hamburgermenuitem">
                 Team
               </a>
             </div>
@@ -85,6 +85,7 @@ const Header = () => {
                 Blog
               </a>
             </div>
+            <hr className="menudivide" />
             <a href="/" className="instaham">
               <i className="ham-insta" />
               space_bar

@@ -112,13 +112,20 @@
 
 }
 
+.menudivide {
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin: 20px 0 20px 25px;
+
+}
+
 .instaham {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: black;
-  position: absolute;
-  bottom: 2%;
 }
 
 .ham-insta::before {
