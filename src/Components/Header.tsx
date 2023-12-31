@@ -4,7 +4,7 @@ import { Squash as Hamburger } from "hamburger-react";
 
 const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  
+
   useEffect(() => {
     if (hamburgerOpen) {
       window.scrollTo(0, 0);
@@ -12,8 +12,7 @@ const Header = () => {
     } else {
       document.body.style.overflow = "unset";
     }
-  }
-  , [hamburgerOpen]);
+  }, [hamburgerOpen]);
 
   return (
     <div>
@@ -54,7 +53,12 @@ const Header = () => {
             />
           </div>
         </div>
-        {hamburgerOpen && <div className="burgerblack" />}
+        {hamburgerOpen && (
+          <div
+            className="burgerblack"
+            onClick={() => setHamburgerOpen(false)}
+          />
+        )}
         <div
           className="hamburgermenu"
           style={{
