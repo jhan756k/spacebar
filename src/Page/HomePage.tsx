@@ -23,11 +23,17 @@ const HomePage = () => {
               <div css={HomePageStyle.titlebtndiv}>
                 <button
                   css={[HomePageStyle.commonStyles, HomePageStyle.aboutbtn]}
+                  onClick={() => {
+                    window.location.href = "/about";
+                  }}
                 >
                   About
                 </button>
                 <button
                   css={[HomePageStyle.commonStyles, HomePageStyle.developbtn]}
+                  onClick={() => {
+                    window.location.href = "/blog";
+                  }}
                 >
                   Development
                 </button>
