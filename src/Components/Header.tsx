@@ -17,21 +17,20 @@ const Header = () => {
 
   return (
     <div css={HeaderStyle.mediaQueries}>
-      <div className="wrap" css={HeaderStyle.wrapStyle}>
-        <div className="itemlist" css={HeaderStyle.itemListStyle}>
-          <div className="logodiv" css={HeaderStyle.logoDivStyle}>
-            <a href="/" className="logoimg">
+      <div css={HeaderStyle.wrapStyle}>
+        <div css={HeaderStyle.itemListStyle}>
+          <div css={HeaderStyle.logoDivStyle}>
+            <a href="/">
               <img
                 src="Assets\spacebar.png"
                 alt="monkey"
-                className="logoitem"
                 css={HeaderStyle.logoItemStyle}
               />
             </a>
           </div>
           <div className="pagediv" css={HeaderStyle.pageDivStyle}>
             <HeaderStyle.PDivItem href="/">
-              <i className="bi-insta" css={HeaderStyle.biInstaStyle} />
+              <i css={HeaderStyle.biInstaStyle} />
               space_bar
             </HeaderStyle.PDivItem>
             <HeaderStyle.PDivItem href="/">Home</HeaderStyle.PDivItem>
@@ -49,13 +48,11 @@ const Header = () => {
         </div>
         {hamburgerOpen && (
           <div
-            className="burgerblack"
             onClick={() => setHamburgerOpen(false)}
             css={HeaderStyle.burgerBlackStyle}
           />
         )}
         <div
-          className="hamburgermenu"
           style={{
             visibility: hamburgerOpen ? "visible" : "hidden",
             transform: hamburgerOpen ? "translateX(0)" : "translateX(100%)",
@@ -63,13 +60,8 @@ const Header = () => {
           }}
           css={HeaderStyle.hamburgerMenuStyle}
         >
-          <div
-            className="hamburgermenulist"
-            css={HeaderStyle.hamburgerMenuListStyle}
-          >
-            <div className="paneltitle" css={HeaderStyle.panelTitleStyle}>
-              Menu
-            </div>
+          <div css={HeaderStyle.hamburgerMenuListStyle}>
+            <div css={HeaderStyle.panelTitleStyle}>Menu</div>
             <HeaderStyle.hamburgerMenuItem href="/">
               Home
             </HeaderStyle.hamburgerMenuItem>
@@ -82,9 +74,9 @@ const Header = () => {
             <HeaderStyle.hamburgerMenuItem href="/blog">
               Blog
             </HeaderStyle.hamburgerMenuItem>
-            <hr className="menudivide" css={HeaderStyle.menuDivideStyle} />
-            <a href="/" className="instaham" css={HeaderStyle.instaHamStyle}>
-              <i className="ham-insta" css={HeaderStyle.hamInstaStyle} />
+            <hr css={HeaderStyle.menuDivideStyle} />
+            <a href="/" css={HeaderStyle.instaHamStyle}>
+              <i css={HeaderStyle.hamInstaStyle} />
               space_bar
             </a>
           </div>

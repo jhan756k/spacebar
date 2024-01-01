@@ -8,40 +8,31 @@ const HomePage = () => {
   const modalBackground: RefObject<HTMLDivElement> = useRef(null);
 
   return (
-    <div>
-      <div className="homediv" css={HomePageStyle.homediv}>
-        <div className="alldiv" css={HomePageStyle.alldiv}>
+    <div css={HomePageStyle.mediaQueries}>
+      <div css={HomePageStyle.homediv}>
+        <div css={HomePageStyle.alldiv}>
           <Header />
-          <div className="background" css={HomePageStyle.background}>
-            <div className="titletextdiv" css={HomePageStyle.titletextdiv}>
-              <div
-                className="title"
-                css={[HomePageStyle.commonStyles, HomePageStyle.title]}
-              >
+          <div css={HomePageStyle.background}>
+            <div css={HomePageStyle.titletextdiv}>
+              <div css={[HomePageStyle.commonStyles, HomePageStyle.title]}>
                 Space Bar
               </div>
-              <div
-                className="titleexp"
-                css={[HomePageStyle.commonStyles, HomePageStyle.titleexp]}
-              >
+              <div css={[HomePageStyle.commonStyles, HomePageStyle.titleexp]}>
                 A groundbreaking washing machine designed for space
               </div>
-              <div className="titlebtndiv" css={HomePageStyle.titlebtndiv}>
+              <div css={HomePageStyle.titlebtndiv}>
                 <button
-                  className="aboutbtn"
                   css={[HomePageStyle.commonStyles, HomePageStyle.aboutbtn]}
                 >
                   About
                 </button>
                 <button
-                  className="developbtn"
                   css={[HomePageStyle.commonStyles, HomePageStyle.developbtn]}
                 >
                   Development
                 </button>
               </div>
               <div
-                className="thumbnaildiv"
                 css={[HomePageStyle.commonStyles, HomePageStyle.thumbnaildiv]}
               >
                 <img
@@ -65,7 +56,6 @@ const HomePage = () => {
       </div>
       {modalOpen && (
         <div
-          className="modalBackground"
           ref={modalBackground}
           onClick={(e) => {
             if (e.target === modalBackground.current) {
@@ -74,7 +64,7 @@ const HomePage = () => {
           }}
           css={HomePageStyle.modalBackground}
         >
-          <div className="modal">
+          <div>
             <video
               className="titlevid"
               controls

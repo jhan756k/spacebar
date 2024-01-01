@@ -5,7 +5,7 @@ import TeamPageStyle from "../Style/TeamPage";
 const TeamPage = () => {
   return (
     <div>
-      <div className="teamdiv" css={TeamPageStyle.teamDivStyle}>
+      <div css={TeamPageStyle.teamDivStyle}>
         <Header />
       </div>
     </div>
