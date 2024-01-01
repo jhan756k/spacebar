@@ -165,7 +165,7 @@ const modalBackground = css({
 });
 
 const mediaQueries = css({
-  "@media (max-width: 900px)": {
+  "@media (max-width: 980px)": {
     ".thumbnail": {
       width: "90vw",
     },

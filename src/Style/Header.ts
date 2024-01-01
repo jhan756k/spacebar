@@ -117,7 +117,7 @@ const hamburgerMenuItem = styled.a({
 });
 
 const menuDivideStyle = css({
-  width: "80%",
+  width: "50vw",
   height: 2,
   backgroundColor: "black",
   border: "none",
@@ -131,22 +131,16 @@ const instaHamStyle = css({
   color: "black",
 });
 
-const hamInstaStyle = css({
-  "&::before": {
-    verticalAlign: "middle",
-    content: '""',
-    backgroundImage:
-      'url("https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico")',
-    backgroundSize: "cover",
-    width: 25,
-    height: 25,
-    display: "inline-block",
-    margin: "0 10px 0 25px",
-  },
+const hamlogoStyle = css({
+  backgroundSize: "cover",
+  width: 35,
+  height: 35,
+  display: "inline-block",
+  margin: "0 0 0 25px",
 });
 
 const mediaQueries = css({
-  "@media (max-width: 900px)": {
+  "@media (max-width: 980px)": {
     ".pagediv": {
       display: "none",
     },
@@ -172,7 +166,7 @@ const HeaderStyle = {
   hamburgerMenuItem,
   menuDivideStyle,
   instaHamStyle,
-  hamInstaStyle,
+  hamlogoStyle,
   mediaQueries,
 };
 
