@@ -29,7 +29,10 @@ const Header = () => {
             </a>
           </div>
           <div className="pagediv" css={HeaderStyle.pageDivStyle}>
-            <HeaderStyle.PDivItem href="/">
+            <HeaderStyle.PDivItem
+              href="https://www.instagram.com/slash_spacebar?igsh=MThxbDdyNTdybTd5OA%3D%3D&utm_source=qr"
+              target="_blank"
+            >
               <i css={HeaderStyle.biInstaStyle} />
               space_bar
             </HeaderStyle.PDivItem>
@@ -75,7 +78,11 @@ const Header = () => {
               Blog
             </HeaderStyle.hamburgerMenuItem>
             <hr css={HeaderStyle.menuDivideStyle} />
-            <a href="/" css={HeaderStyle.instaHamStyle}>
+            <a
+              href="https://www.instagram.com/slash_spacebar?igsh=MThxbDdyNTdybTd5OA%3D%3D&utm_source=qr"
+              target="_blank"
+              css={HeaderStyle.instaHamStyle}
+            >
               <i css={HeaderStyle.hamInstaStyle} />
               space_bar
             </a>
