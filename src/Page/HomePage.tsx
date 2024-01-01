@@ -1,5 +1,6 @@
+/** @jsxImportSource @emotion/react */
 import { useState, useRef, RefObject } from "react";
-import "../Style/HomePage.css";
+import HomePageStyle from "../Style/HomePage";
 import Header from "../Components/Header";
 
 const HomePage = () => {
@@ -8,24 +9,46 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="homediv">
-        <div className="alldiv">
+      <div className="homediv" css={HomePageStyle.homediv}>
+        <div className="alldiv" css={HomePageStyle.alldiv}>
           <Header />
-          <div className="background">
-            <div className="titletextdiv">
-              <div className="title">Space Bar</div>
-              <div className="titleexp">
+          <div className="background" css={HomePageStyle.background}>
+            <div className="titletextdiv" css={HomePageStyle.titletextdiv}>
+              <div
+                className="title"
+                css={[HomePageStyle.commonStyles, HomePageStyle.title]}
+              >
+                Space Bar
+              </div>
+              <div
+                className="titleexp"
+                css={[HomePageStyle.commonStyles, HomePageStyle.titleexp]}
+              >
                 A groundbreaking washing machine designed for space
               </div>
-              <div className="titlebtndiv">
-                <button className="aboutbtn">About</button>
-                <button className="developbtn">Development</button>
+              <div className="titlebtndiv" css={HomePageStyle.titlebtndiv}>
+                <button
+                  className="aboutbtn"
+                  css={[HomePageStyle.commonStyles, HomePageStyle.aboutbtn]}
+                >
+                  About
+                </button>
+                <button
+                  className="developbtn"
+                  css={[HomePageStyle.commonStyles, HomePageStyle.developbtn]}
+                >
+                  Development
+                </button>
               </div>
-              <div className="thumbnaildiv">
+              <div
+                className="thumbnaildiv"
+                css={[HomePageStyle.commonStyles, HomePageStyle.thumbnaildiv]}
+              >
                 <img
                   src="Assets/thumbnail.jpg"
                   alt=""
                   className="thumbnail"
+                  css={HomePageStyle.thumbnail}
                 />
                 <input
                   type="image"
@@ -33,6 +56,7 @@ const HomePage = () => {
                   alt=""
                   className="playbtn"
                   onClick={() => setModalOpen(true)}
+                  css={HomePageStyle.playbtn}
                 />
               </div>
             </div>
@@ -48,14 +72,18 @@ const HomePage = () => {
               setModalOpen(false);
             }
           }}
+          css={HomePageStyle.modalBackground}
         >
           <div className="modal">
-            <div className="modalBody">
-              <video className="titlevid" controls autoPlay>
-                <source src="Assets/video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <video
+              className="titlevid"
+              controls
+              autoPlay
+              css={HomePageStyle.titlevid}
+            >
+              <source src="Assets/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       )}

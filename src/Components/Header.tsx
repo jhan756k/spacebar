@@ -1,6 +1,7 @@
+/** @jsxImportSource @emotion/react */
 import { useState, useEffect } from "react";
-import "../Style/Header.css";
 import { Squash as Hamburger } from "hamburger-react";
+import HeaderStyle from "../Style/Header";
 
 const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -15,37 +16,30 @@ const Header = () => {
   }, [hamburgerOpen]);
 
   return (
-    <div>
-      <div className="wrap">
-        <div className="itemlist">
-          <div className="logodiv">
+    <div css={HeaderStyle.mediaQueries}>
+      <div className="wrap" css={HeaderStyle.wrapStyle}>
+        <div className="itemlist" css={HeaderStyle.itemListStyle}>
+          <div className="logodiv" css={HeaderStyle.logoDivStyle}>
             <a href="/" className="logoimg">
               <img
                 src="Assets\spacebar.png"
                 alt="monkey"
                 className="logoitem"
+                css={HeaderStyle.logoItemStyle}
               />
             </a>
           </div>
-          <div className="pagediv">
-            <a href="/" className="pdivitem">
-              <i className="bi-insta" />
+          <div className="pagediv" css={HeaderStyle.pageDivStyle}>
+            <HeaderStyle.PDivItem href="/">
+              <i className="bi-insta" css={HeaderStyle.biInstaStyle} />
               space_bar
-            </a>
-            <a href="/" className="pdivitem">
-              Home
-            </a>
-            <a href="/team" className="pdivitem">
-              Team
-            </a>
-            <a href="/" className="pdivitem">
-              About
-            </a>
-            <a href="/" className="pdivitem">
-              Blog
-            </a>
+            </HeaderStyle.PDivItem>
+            <HeaderStyle.PDivItem href="/">Home</HeaderStyle.PDivItem>
+            <HeaderStyle.PDivItem href="/team">Team</HeaderStyle.PDivItem>
+            <HeaderStyle.PDivItem href="/about">About</HeaderStyle.PDivItem>
+            <HeaderStyle.PDivItem href="/blog">Blog</HeaderStyle.PDivItem>
           </div>
-          <div className="hamburgerdiv">
+          <div className="hamburgerdiv" css={HeaderStyle.hamburgerDivStyle}>
             <Hamburger
               toggled={hamburgerOpen}
               toggle={setHamburgerOpen}
@@ -57,6 +51,7 @@ const Header = () => {
           <div
             className="burgerblack"
             onClick={() => setHamburgerOpen(false)}
+            css={HeaderStyle.burgerBlackStyle}
           />
         )}
         <div
@@ -66,32 +61,30 @@ const Header = () => {
             transform: hamburgerOpen ? "translateX(0)" : "translateX(100%)",
             transition: "all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
           }}
+          css={HeaderStyle.hamburgerMenuStyle}
         >
-          <div className="hamburgermenulist">
-            <div className="paneltitle">Menu</div>
-            <div className="hamburgermenuitem">
-              <a href="/" className="hamburgermenuitem">
-                Home
-              </a>
+          <div
+            className="hamburgermenulist"
+            css={HeaderStyle.hamburgerMenuListStyle}
+          >
+            <div className="paneltitle" css={HeaderStyle.panelTitleStyle}>
+              Menu
             </div>
-            <div className="hamburgermenuitem">
-              <a href="/team" className="hamburgermenuitem">
-                Team
-              </a>
-            </div>
-            <div className="hamburgermenuitem">
-              <a href="/" className="hamburgermenuitem">
-                About
-              </a>
-            </div>
-            <div className="hamburgermenuitem">
-              <a href="/" className="hamburgermenuitem">
-                Blog
-              </a>
-            </div>
-            <hr className="menudivide" />
-            <a href="/" className="instaham">
-              <i className="ham-insta" />
+            <HeaderStyle.hamburgerMenuItem href="/">
+              Home
+            </HeaderStyle.hamburgerMenuItem>
+            <HeaderStyle.hamburgerMenuItem href="/team">
+              Team
+            </HeaderStyle.hamburgerMenuItem>
+            <HeaderStyle.hamburgerMenuItem href="/about">
+              About
+            </HeaderStyle.hamburgerMenuItem>
+            <HeaderStyle.hamburgerMenuItem href="/blog">
+              Blog
+            </HeaderStyle.hamburgerMenuItem>
+            <hr className="menudivide" css={HeaderStyle.menuDivideStyle} />
+            <a href="/" className="instaham" css={HeaderStyle.instaHamStyle}>
+              <i className="ham-insta" css={HeaderStyle.hamInstaStyle} />
               space_bar
             </a>
           </div>
