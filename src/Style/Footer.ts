@@ -52,6 +52,10 @@ const footer = css({
       textAlign: "left",
       fontSize: "20px",
       margin: "10px 0 10px 0",
+      "&:hover": {
+        color: "white",
+        transition: "all 0.2s",
+      },
     },
   },
   "& .fbottom": {
@@ -103,7 +107,7 @@ const footerIcon = css({
   cursor: "pointer",
   "&:hover": {
     transform: "scale(1.2)",
-    transition: "all 0.1s",
+    transition: "all 0.2s",
   },
 });
 
