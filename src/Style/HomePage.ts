@@ -20,21 +20,14 @@ const commonStyles = css({
 
 const homediv = css({
   background:
-    "linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(99, 9, 121, 1) 36%, rgba(89, 0, 255, 1) 100%)",
+    "linear-gradient(180deg, rgba(15, 16, 28, 1) 0%, rgba(44, 19, 54, 1) 36%, rgba(41, 16, 94, 1) 100%)",
   position: "absolute",
   display: "block",
   justifyContent: "center",
   alignItems: "center",
-  height: "2000px",
+  height: "fit-content",
   width: "100%",
   overflow: "hidden",
-});
-
-const alldiv = css({
-  background: "rgba(21, 23, 25, 0.7)",
-  position: "inherit",
-  height: "inherit",
-  width: "inherit",
 });
 
 const background = css({
@@ -181,7 +174,6 @@ const mediaQueries = css({
 const HomePageStyle = {
   commonStyles,
   homediv,
-  alldiv,
   background,
   titletextdiv,
   title,
