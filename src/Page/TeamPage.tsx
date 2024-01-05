@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import Header from "../Components/Header";
+import Footer from "../Components/Footer.tsx";
 import TeamPageStyle from "../Style/TeamPage";
 
 const TeamPage = () => {
@@ -7,6 +8,7 @@ const TeamPage = () => {
     <div>
       <div css={TeamPageStyle.teamDivStyle}>
         <Header />
+        <Footer />
       </div>
     </div>
   );
