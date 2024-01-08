@@ -1,17 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import TeamPageStyle from "../Style/TeamPage";
+import AboutPageStyle from "../Style/AboutPage";
 
-const TeamPage = () => {
+const AboutPage = () => {
   return (
     <div>
-      <div css={TeamPageStyle.teamDivStyle}>
+      <div css={AboutPageStyle.aboutDivStyle}>
         <Header />
+        <div></div>
         <Footer />
       </div>
     </div>
   );
 };
 
-export default TeamPage;
+export default AboutPage;
