@@ -67,7 +67,7 @@ const Footer = () => {
                 ]}
               >
                 <h1>Sitemap</h1>
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/team">Team</a>
                 <a href="/blog">Blog</a>
