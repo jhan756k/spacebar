@@ -1,7 +1,7 @@
 import HomePage from "./Page/HomePage";
 import TeamPage from "./Page/TeamPage";
-import AboutPage from "./Page/AboutPage.tsx";
-import BlogPage from "./Page/BlogPage.tsx";
+import AboutPage from "./Page/AboutPage";
+import BlogPage from "./Page/BlogPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
