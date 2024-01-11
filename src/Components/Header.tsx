@@ -23,7 +23,7 @@ const Header = () => {
             <a href="/">
               <img
                 src="Assets\yellow.png"
-                alt="monkey"
+                alt=""
                 css={HeaderStyle.logoItemStyle}
               />
             </a>
