@@ -56,7 +56,7 @@ const logoItemStyle = css({
 
 const PDivItem = styled.a({
   textDecoration: "none",
-  color: "#c5d2dc",
+  color: "#FBC139",
   margin: "0 20px",
   "&:hover": {
     color: "white",

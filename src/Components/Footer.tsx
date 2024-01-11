@@ -14,11 +14,10 @@ const Footer = () => {
           <div className="fdiv2">
             <div className="ftop">
               <div css={FooterStyle.footerLogo}>
-                <img src="Assets\spacebar.png" alt="monkey" />
+                <img src="Assets\yellow.png" alt="" />
                 <h2>
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previewing layouts and
-                  visual mockups.
+                  Our innovation, spacebar&trade;, revolutionizes space washing
+                  machines by ingeniously addressing existing challenges.
                 </h2>
               </div>
               <div
@@ -31,31 +30,22 @@ const Footer = () => {
               >
                 <h1>Contact</h1>
                 <a href="tel:01085517793" target="_blank">
-                  <FaPhoneAlt
-                    style={{ color: "#9ba9b4", verticalAlign: "middle" }}
-                  />{" "}
-                  (+82) 10 8551 7793
+                  <FaPhoneAlt css={FooterStyle.footerTextIcon} /> (+82) 10 8551
+                  7793
                 </a>
                 <a href="mailto:jhan756k@gmail.com" target="_blank">
-                  <IoMdMail
-                    style={{ color: "#9ba9b4", verticalAlign: "middle" }}
-                  />{" "}
+                  <IoMdMail css={FooterStyle.footerTextIcon} />{" "}
                   jhan756k@gmail.com
                 </a>
                 <a href="https://github.com/jhan756k" target="_blank">
-                  <ImGithub
-                    style={{ color: "#9ba9b4", verticalAlign: "middle" }}
-                  />{" "}
-                  jhan756k
+                  <ImGithub css={FooterStyle.footerTextIcon} /> jhan756k
                 </a>
                 <a
                   href="https://www.google.com/maps/place/Korean+Minjok+Leadership+Academy/data=!3m1!4b1!4m6!3m5!1s0x3563affa2612a7cd:0xab647412adc594ac!8m2!3d37.4588684!4d128.1456915!16zL20vMDhkdDBx?entry=ttu"
                   target="_blank"
                 >
-                  <FaLocationDot
-                    style={{ color: "#9ba9b4", verticalAlign: "middle" }}
-                  />{" "}
-                  800 Bonghwa-ro, Anheung-myeon, Gangwon-do, Korea
+                  <FaLocationDot css={FooterStyle.footerTextIcon} /> 800
+                  Bonghwa-ro, Anheung-myeon, Gangwon-do, Korea
                 </a>
               </div>
               <div
@@ -77,7 +67,7 @@ const Footer = () => {
               <div>
                 <h1
                   css={{
-                    color: "#9ba9b4",
+                    color: "#FBC139",
                     fontSize: "20px",
                     margin: "10px",
                   }}

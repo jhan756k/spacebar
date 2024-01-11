@@ -20,7 +20,7 @@ const commonStyles = css({
 
 const homediv = css({
   background:
-    "linear-gradient(180deg, rgba(15, 16, 28, 1) 0%, rgba(44, 19, 54, 1) 36%, rgba(41, 16, 94, 1) 100%)",
+    "linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(45, 19, 50, 1) 99%, rgba(41, 15, 40, 1) 100%)",
   position: "absolute",
   display: "block",
   justifyContent: "center",
@@ -47,7 +47,9 @@ const titletextdiv = css({
 });
 
 const title = css({
-  color: "#d9e3ea",
+    color: "#FBC139",
+
+  // #d9e3ea #9ba9b4
   fontWeight: "bold",
   fontSize: "60px",
   marginBottom: "10px",
@@ -55,8 +57,8 @@ const title = css({
 });
 
 const titleexp = css({
-  color: "#9ba9b4",
-  fontSize: "23px",
+  color: "#A96E28",
+  fontSize: "25px",
   textAlign: "center",
   animationDelay: "0.2s",
 });
@@ -72,12 +74,12 @@ const titlebtndiv = css({
 
 const buttonBase = css({
   fontSize: "18px",
-  fontWeight: "400",
+  fontWeight: "500",
   cursor: "pointer",
   transition: "0.2s",
   width: "180px",
   height: "50px",
-  borderRadius: "2px",
+  borderRadius: "3px",
   "@media (max-width: 430px)": {
     width: "150px",
     height: "40px",
@@ -87,14 +89,15 @@ const buttonBase = css({
 const developbtn = css([
   buttonBase,
   {
-    border: "1px solid #33363a",
+    border: "2px solid #33363a",
     backgroundColor: "#33363a",
-    color: "white",
+    color: "#FBC139",
     marginLeft: "10px",
     animationDelay: "0.3s",
     "&:hover": {
-      backgroundColor: "#25282c",
-      border: "1px solid #25282c",
+      backgroundColor: "#FBC139",
+      color: "black",
+      border: "2px solid white",
     },
   },
 ]);
@@ -102,14 +105,15 @@ const developbtn = css([
 const aboutbtn = css([
   buttonBase,
   {
-    border: "1px solid #5d5dff",
-    backgroundColor: "#5d5dff",
-    color: "white",
+    border: "2px solid #FBC139",
+    backgroundColor: "#FBC139",
+    color: "black",
     marginRight: "10px",
     animationDelay: "0.4s",
     "&:hover": {
-      backgroundColor: "#4b4acf",
-      border: "1px solid #4b4acf",
+      backgroundColor: "#33363a",
+      color: "#FBC139",
+      border: "2px solid white",
     },
   },
 ]);

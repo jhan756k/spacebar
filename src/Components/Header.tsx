@@ -22,7 +22,7 @@ const Header = () => {
           <div css={HeaderStyle.logoDivStyle}>
             <a href="/">
               <img
-                src="Assets\spacebar.png"
+                src="Assets\yellow.png"
                 alt="monkey"
                 css={HeaderStyle.logoItemStyle}
               />

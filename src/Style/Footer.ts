@@ -40,7 +40,7 @@ const footer = css({
     justifyContent: "space-between",
     "& h1": {
       display: "block",
-      color: "white",
+      color: "#FBC139",
       margin: 0,
       fontSize: "30px",
       fontWeight: "bold",
@@ -48,13 +48,16 @@ const footer = css({
     },
     "& a": {
       textDecoration: "none",
-      color: "#9ba9b4",
+      color: "#FBC139",
       textAlign: "left",
       fontSize: "20px",
       margin: "10px 0 10px 0",
       "&:hover": {
         color: "white",
         transition: "all 0.2s",
+        "& svg": {
+          color: "white",
+        },
       },
     },
   },
@@ -78,7 +81,7 @@ const footerLogo = css({
   },
   "& h2": {
     margin: "10px 0 0 0",
-    color: "#9ba9b4",
+    color: "#FBC139",
     fontSize: "20px",
     fontWeight: "normal",
     textAlign: "left",
@@ -99,7 +102,7 @@ const footerSocial = css({
 
 const footerIcon = css({
   display: "inline-block",
-  color: "white",
+  color: "#FBC139",
   margin: "0 10px 0 10px",
   width: "30px",
   height: "30px",
@@ -108,7 +111,13 @@ const footerIcon = css({
   "&:hover": {
     transform: "scale(1.2)",
     transition: "all 0.2s",
+    color: "white",
   },
+});
+
+const footerTextIcon = css({
+  color: "#FBC139",
+  verticalAlign: "middle",
 });
 
 const FooterStyle = {
@@ -117,6 +126,7 @@ const FooterStyle = {
   footerItems,
   footerSocial,
   footerIcon,
+  footerTextIcon,
 };
 
 export default FooterStyle;
