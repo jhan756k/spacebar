@@ -60,6 +60,7 @@ const TeamImgDiv = styled.div({
   alignItems: "center",
   width: "80%",
   marginTop: "10px",
+  marginBottom: "70px",
 });
 
 const TeamImg = styled.div({
@@ -97,17 +98,28 @@ const TeamExpDiv = css({
   justifyContent: "center",
   alignItems: "center",
   marginTop: "10px",
-  marginBottom: "50px",
+  marginBottom: "70px",
   animationDelay: "0.1s",
 });
 
 const teamImgStyle = css({
   objectFit: "contain",
   width: "80%",
-  marginTop: "80px",
+  marginTop: "100px",
   verticalAlign: "middle",
   border: "2px solid #FBC139",
   borderRadius: "20px",
+  animationDelay: "0.8s",
+});
+
+const teamExpStyle = css({
+  color: "#A96E28",
+  fontSize: "28px",
+  fontWeight: "400",
+  textAlign: "justify",
+  width: "75%",
+  marginTop: "40px",
+  animationDelay: "0.7s",
 });
 
 const TeamPageStyle = {
@@ -119,6 +131,7 @@ const TeamPageStyle = {
   TeamExpDiv,
   teamImgStyle,
   commonStyles,
+  teamExpStyle,
 };
 
 export default TeamPageStyle;
