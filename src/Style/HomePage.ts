@@ -143,7 +143,8 @@ const playbtn = css({
 });
 
 const titlevid = css({
-  marginTop: "60px",
+  marginTop: "50px",
+  aspectRatio: "16/9",
   width: "75vw",
   objectFit: "contain",
 });

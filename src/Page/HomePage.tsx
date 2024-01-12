@@ -69,15 +69,14 @@ const HomePage = () => {
           css={HomePageStyle.modalBackground}
         >
           <div>
-            <video
+            <iframe
               className="titlevid"
-              controls
-              autoPlay
+              src="https://www.youtube.com/embed/z4TMkO3Wl3k?si=jHqHKuyliUj9U3Dv"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
               css={HomePageStyle.titlevid}
-            >
-              <source src="Assets/video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            ></iframe>
           </div>
         </div>
       )}
