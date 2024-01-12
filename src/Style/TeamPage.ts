@@ -1,5 +1,23 @@
-import { css } from "@emotion/react";
+import { css, keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
+
+const fadeInUp = keyframes({
+  from: {
+    transform: "translate(0px, 20px)",
+    opacity: 0,
+  },
+  to: {
+    visibility: "visible",
+    transform: "translate(0px, 0)",
+    opacity: 1,
+  },
+});
+
+const commonStyles = css({
+  visibility: "hidden",
+  animation: `${fadeInUp} 0.5s ease backwards`,
+  animationFillMode: "forwards",
+});
 
 const TeamDivStyle = styled.div({
   background: "rgb(21, 23, 25)",
@@ -80,6 +98,7 @@ const TeamExpDiv = css({
   alignItems: "center",
   marginTop: "10px",
   marginBottom: "50px",
+  animationDelay: "0.1s",
 });
 
 const teamImgStyle = css({
@@ -99,6 +118,7 @@ const TeamPageStyle = {
   TeamImgDiv,
   TeamExpDiv,
   teamImgStyle,
+  commonStyles,
 };
 
 export default TeamPageStyle;
