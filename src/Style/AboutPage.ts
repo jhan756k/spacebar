@@ -88,6 +88,7 @@ const ProblemImgDiv = styled.div({
   alignItems: "center",
   width: "100%",
   marginTop: "50px",
+  marginBottom: "30px",
   overflow: "hidden",
 });
 
@@ -119,6 +120,55 @@ const ArrowStyle = css({
   paddingBottom: "110px",
 });
 
+const problemAbstract = css({
+  color: "#A96E28",
+  fontSize: "15px",
+  fontWeight: "400",
+  width: "80%",
+  margin: "0",
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-between",
+  "& img": {
+    width: "400px",
+    margin: "20px",
+    borderRadius: "20px",
+    border: "2px solid #FBC139",
+  },
+});
+
+const SolutionDiv = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "100%",
+  overflow: "hidden",
+  marginTop: "100px",
+  "& h1": {
+    color: "#FBC139",
+    fontSize: "50px",
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: "20px",
+    marginTop: "0",
+  },
+  "& p": {
+    color: "#A96E28",
+    fontSize: "25px",
+    textAlign: "center",
+    margin: "0 0 20px 0",
+    animationDelay: "0.1s",
+  },
+  "& hr": {
+    width: "95vw",
+    border: "1px dashed #A96E28",
+    borderRadius: "20px",
+    margin: "100px 0",
+    animationDelay: "0.3s",
+  },
+});
+
 const AboutPageStyle = {
   AboutDiv,
   commonStyles,
@@ -127,6 +177,8 @@ const AboutPageStyle = {
   ProblemImg,
   ArrowStyle,
   teamLinkStyle,
+  problemAbstract,
+  SolutionDiv,
 };
 
 export default AboutPageStyle;

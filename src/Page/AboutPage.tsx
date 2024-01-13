@@ -17,7 +17,9 @@ const AboutPage = () => {
             spacebar ensures clean and effective laundry, while maintaining
             <br />
             water reusability.{" "}
-            <a href="/team" css={AboutPageStyle.teamLinkStyle}>--&gt; about our team</a>
+            <a href="/team" css={AboutPageStyle.teamLinkStyle}>
+              --&gt; about our team
+            </a>
           </p>
           <video autoPlay loop muted css={AboutPageStyle.commonStyles}>
             <source src="./Assets/model.mp4" type="video/mp4" />
@@ -77,7 +79,22 @@ const AboutPage = () => {
               <h3>Used clothes are stored along with other wastes</h3>
             </AboutPageStyle.ProblemImg>
           </AboutPageStyle.ProblemImgDiv>
+          <div css={AboutPageStyle.problemAbstract}>
+            <div>
+              <h2>
+                - Water is non-reusable when artificial detergents are used
+              </h2>
+              <h2>- Colossal amount of weight & storage space needed </h2>
+              <h2>- 150lbs of clothing per person every year</h2>
+              <h2>- Intense & unpleasant odor</h2>
+              <h2>- Hygiene issue</h2>
+            </div>
+            <img src="./Assets/spacelaundry.jpg" alt="sl" />
+          </div>
         </AboutPageStyle.ProblemDiv>
+        <AboutPageStyle.SolutionDiv>
+          <h1>2. Our Solution</h1>
+        </AboutPageStyle.SolutionDiv>
         <Footer />
       </AboutPageStyle.AboutDiv>
     </div>
