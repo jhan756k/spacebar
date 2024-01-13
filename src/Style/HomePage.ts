@@ -129,6 +129,8 @@ const thumbnaildiv = css({
 const thumbnail = css({
   width: "65vw",
   objectFit: "contain",
+  border: "2px solid #FBC139",
+  borderRadius: "20px",
 });
 
 const playbtn = css({

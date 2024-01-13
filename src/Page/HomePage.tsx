@@ -47,7 +47,7 @@ const HomePage = () => {
               />
               <input
                 type="image"
-                src="Assets/playbtny.png"
+                src="Assets/playbtn.png"
                 alt=""
                 className="playbtn"
                 onClick={() => setModalOpen(true)}
