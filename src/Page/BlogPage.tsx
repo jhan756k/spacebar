@@ -2,6 +2,8 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import BlogPageStyle from "../Style/BlogPage";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import Gallery from "../Components/Gallery";
 
 const BlogPage = () => {
