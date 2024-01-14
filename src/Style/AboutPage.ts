@@ -105,12 +105,14 @@ const ProblemImg = styled.div({
     margin: "20px",
     border: "2px solid #FBC139",
     borderRadius: "50%",
+    animationDelay: "0.5s",
   },
   "& h3": {
     color: "#A96E28",
     fontSize: "20px",
     fontWeight: "400",
     margin: "0",
+    animationDelay: "0.5s",
   },
 });
 
@@ -118,6 +120,7 @@ const ArrowStyle = css({
   width: "150px",
   verticalAlign: "middle",
   paddingBottom: "110px",
+  animationDelay: "0.5s",
 });
 
 const problemAbstract = css({
@@ -169,6 +172,52 @@ const SolutionDiv = styled.div({
   },
 });
 
+const SolutionExp = css({
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  width: "100%",
+  justifyContent: "space-evenly",
+  marginTop: "50px",
+});
+
+const ExplainTwoDiv = styled.div({
+  display: "block",
+  justifyContent: "center",
+  alignItems: "center",
+  marginBottom: "50px",
+  width: "40%",
+  "& h1": {
+    color: "#FBC139",
+    fontSize: "35px",
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: "20px",
+    marginTop: "0",
+  },
+  "& h3": {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    color: "#A96E28",
+    fontSize: "23px",
+    fontWeight: "400",
+    margin: "0",
+    textAlign: "justify",
+    justifyContent: "center",
+    "& img": {
+      display: "block",
+      width: "90%",
+      margin: "20px",
+      borderRadius: "20px",
+      border: "2px solid #FBC139",
+    },
+    "@media (max-width: 1000px)": {
+      textAlign: "center",
+    },
+  },
+});
+
 const AboutPageStyle = {
   AboutDiv,
   commonStyles,
@@ -179,6 +228,8 @@ const AboutPageStyle = {
   teamLinkStyle,
   problemAbstract,
   SolutionDiv,
+  SolutionExp,
+  ExplainTwoDiv,
 };
 
 export default AboutPageStyle;

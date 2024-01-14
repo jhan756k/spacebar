@@ -54,7 +54,7 @@ const TeamPage = () => {
             About Us
           </h1>
           <h3 css={[TeamPageStyle.commonStyles, TeamPageStyle.teamExpStyle]}>
-            Our team, /slash, consists of four members. Seongju Kim, the Chief
+            &emsp;Our team, /slash, consists of four members. Seongju Kim, the Chief
             Executive Officer, Minyong Kim, the Chief Financial Officer, Minjae
             Jeon, the Chief Technology Officer, and Jooney Han, the Chief
             Operating Officer. Seongju is the leader of our team, supervising
